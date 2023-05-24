@@ -1,22 +1,31 @@
-/*this will target all text under the selectors in html document 
-and make it grey*/
-h1,h2,h3,ul,p2{
-    color: #333;
-}
-
-/*this will move the wrapper to center and give background colour
-selecting using the wrapper class*/
-.wrapper{
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the child elements horizontally */
+    justify-content: center; /* This will center the child elements vertically */
     background-color: rgba(175, 99, 12, 0.467);
     width: 80vh;
     margin: 0 auto;
     border: solid 4px #000;
-}
+  }
+  
+  /*this will target all text under the selectors in html document 
+and make it grey also center everything*/
+  h1, h2, h3, p2,ul{
+    text-align: center; 
+    color: #333;
+    list-style: none;
+  }
+  
+  /* This will center the image horizontally */
+  .wrapper section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+  }
 
-/*using wrapper class targeting ul odd section from list and bolding */
-.wrapper ul li:nth-child(odd){
+  /*using wrapper class targeting ul odd section from list and bolding */
+  .wrapper ul li:nth-child(odd) {
     font-weight: bold;
-}
-
-
-
+  }
