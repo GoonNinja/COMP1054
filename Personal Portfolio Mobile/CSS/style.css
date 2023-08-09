@@ -1,5 +1,6 @@
 /*Mobile*/
 /*body*/
+
 body {
     width: 100%;
     background-color: #000;
@@ -8,6 +9,7 @@ body {
     font-family:'Ysabeau Office', 'sans-seriff';
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body p,a,ul,li{
